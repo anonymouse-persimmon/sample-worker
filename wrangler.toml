@@ -3,6 +3,12 @@ name = "sample-proxy"
 main = "src/index.js"
 compatibility_date = "2024-04-19"
 logpush = true
+
+kv_namespaces = [
+	{ binding = "SETTINGS", id = "f10879569fe94cc6ae9a35f4b655c2fd" }
+]
+
+
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Docs:
 # - https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
