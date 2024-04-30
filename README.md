@@ -1,4 +1,17 @@
-# set key value
+# 目的
+
+一つのドメインで複数のcloudflare上のPages、Workersを使用できるようにするため、proxyを行う。
+
+## ゴール
+
+下記のPages、Workersを一つのドメインで管理する。
+
+- 静的サイト Pages
+- SPAサイト Pages
+- API Workers
+- OGPを含むサイト Workers
+
+# KV値
 
 | KEY                   | VALUE                            |
 |-----------------------|----------------------------------|
