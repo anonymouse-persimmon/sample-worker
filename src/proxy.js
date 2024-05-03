@@ -11,6 +11,7 @@ export default {
 			forword.protocol = await env.SETTINGS.get("MODIFY_APP_PROTOCOL")
 			forword.hostname = await env.SETTINGS.get("MODIFY_APP_HOST")
 			forword.port = await env.SETTINGS.get("MODIFY_APP_PORT")
+			forword.pathname = origin.pathname.replace('/modify-my-store', '')
 		} else {
 			where = "d"
 			forword.protocol = await env.SETTINGS.get("DEFAULT_ROOT_PROTOCOL")
