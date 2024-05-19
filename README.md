@@ -22,6 +22,10 @@
 | MODIFY_APP_PROTOCOL   | protocol to modify app proxy     |
 | MODIFY_APP_HOST       | host to modify app proxy         |
 | MODIFY_APP_PORT       | port to modify app proxy         |
+| API_PROXY             | set ture if api is enable        |
+| API_PROTOCOL          | protocol to api proxy            |
+| API_HOST              | host to api proxy                |
+| API_PORT              | port to api proxy                |
 
 ## production and staging
 
@@ -33,5 +37,4 @@ Set value to local KV.
 A command like the one below.
 `wrangler kv:key put --namespace-id=f10879569fe94cc6ae9a35f4b655c2fd "<KEY>" "<VALUE>" --local`
 Include examples as comments in the dev.vars file
-
 
