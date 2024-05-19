@@ -7,10 +7,11 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         timeout-minutes: 60
+        environment: prod
         steps:
             - uses: actions/checkout@v4
             - name: Build & Deploy Worker
               uses: cloudflare/wrangler-action@v3
               with:
-                  apiToken: ${{ secrets.prod.CLOUDFLARE_API_TOKEN }}
-                  accountId: ${{ secrets.prod.CLOUDFLARE_ACCOUNT_ID }}
+                  apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+                  accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
